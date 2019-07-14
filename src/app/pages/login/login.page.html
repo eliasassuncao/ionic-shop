@@ -1,0 +1,69 @@
+<ion-content>
+  <div class="container">
+    <div class="header">
+      <h1>Seja bem vindo!</h1>
+      <span>Faça o login para continuar</span>
+      <ion-img src="/assets/img/ionic-icon.png" class="ionic-image"></ion-img>
+    </div>
+    <ion-segment (ionChange)="segmentChanged($event)" value="login">
+      <ion-segment-button value="login">
+        <ion-label>Login</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="register">
+        <ion-label>Cadastro</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+    <ion-slides>
+      <ion-slide>
+        <ion-card class="slide-inner ion-padding">
+          <span>Login</span>
+
+          <ion-item class="ion-margin-top" lines="none">
+            <ion-input type="email" placeholder="E-mail"></ion-input>
+          </ion-item>
+
+          <ion-item class="ion-margin-top" lines="none">
+            <ion-input type="password" placeholder="Senha"></ion-input>
+          </ion-item>
+
+          <ion-button class="ion-margin-top login-button" shape="round" (click)="login()" expand=" block">
+            Entrar
+          </ion-button>
+
+          <div class="icon-buttons">
+            <ion-button shape="round" class="button-facebook">
+              <ion-icon name="logo-facebook" class="icon-facebook"></ion-icon>
+              Entrar com Facebook
+            </ion-button>
+            <ion-button shape="round" class="button-google">
+              <ion-icon name="logo-google" class="icon-google"></ion-icon>
+              Entrar com Google
+            </ion-button>
+          </div>
+
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card class="slide-inner ion-padding">
+          <span>Cadastro</span>
+
+          <ion-item class="ion-margin-top" lines="none">
+            <ion-input type="text" placeholder="Nome"></ion-input>
+          </ion-item>
+
+          <ion-item class="ion-margin-top" lines="none">
+            <ion-input type="email" placeholder="E-mail"></ion-input>
+          </ion-item>
+
+          <ion-item class="ion-margin-top" lines="none">
+            <ion-input type="password" placeholder="Senha"></ion-input>
+          </ion-item>
+
+          <ion-button class="ion-margin-top" (click)="register()" color="light" expand="block">
+            Cadastrar
+          </ion-button>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>

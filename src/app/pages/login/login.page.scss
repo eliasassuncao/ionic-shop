@@ -1,0 +1,67 @@
+ion-slides {
+    .slide-inner {
+        background-color: #fff;
+        border-radius: 10px
+    }
+}
+h1 {
+   text-align: center;
+   color: #fff;
+   font-weight: 600;
+}
+span {
+    text-align: center;
+    color: #fff;
+}
+.container {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ionic-image {
+        width: 20%;
+        height: 20%;
+        margin-top: 20px;
+    }
+    ion-segment {
+        --backgroung-checked: var(--ion-color-primary);
+        --background-activated: var(--ion-color-primary-shade);
+        --background-checked: #fff;
+        --color-checked: var(--ion-color-primary);
+        --border-color: #fff;
+        --color: #fff;
+        margin-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .icon-facebook {
+        margin-right: 10px;
+    }
+    .icon-google {
+        margin-right: 10px
+    }
+    .button-facebook {
+        --background: #4267b2;
+        --background-activated: #2f5cb7;
+        width: 75%;
+    }
+    .button-google {
+        --background: #ea4335;
+        --background-activated: #f53626;
+         width: 75%;
+    }
+    .icon-buttons {
+        margin-top: 20px;
+    }
+    ion-item {
+        --background: #f5f5f5;
+        --border-radius: 10px;
+    }
+    .login-button {
+         width: 75%;
+    }
+    background-image: url('/assets/img/background-login.png');
+    background-size: cover;
+    height: 100%
+}
